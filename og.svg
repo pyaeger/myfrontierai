@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="head" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9ff0c0"/><stop offset=".5" stop-color="#7fe6ff"/><stop offset="1" stop-color="#cdb4ff"/>
+    </linearGradient>
+    <linearGradient id="spec" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00ff41"/><stop offset=".2" stop-color="#19f0c0"/><stop offset=".4" stop-color="#45d8ff"/><stop offset=".6" stop-color="#6aa6ff"/><stop offset=".8" stop-color="#b98cff"/><stop offset="1" stop-color="#ff77c8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="18%" cy="106%" r="80%"><stop offset="0" stop-color="#ff77c8" stop-opacity=".13"/><stop offset="1" stop-color="#ff77c8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#06100b"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="9" fill="url(#spec)"/>
+  <text x="90" y="200" font-family="'JetBrains Mono',monospace" font-size="23" font-weight="700" letter-spacing="6" fill="#45d8ff">A SOVEREIGN PERSONAL AI &#183; THE LATENT COUNTRY</text>
+  <text x="84" y="322" font-family="'JetBrains Mono',monospace" font-size="102" font-weight="800" fill="url(#head)">MyFrontierAI</text>
+  <text x="90" y="398" font-family="'Newsreader',Georgia,serif" font-size="33" font-style="italic" fill="#8aa394">Map the undiscovered country of your own knowledge &amp; capability.</text>
+  <rect x="90" y="466" width="140" height="4" fill="url(#spec)"/>
+  <text x="90" y="540" font-family="'JetBrains Mono',monospace" font-size="30" font-weight="700" fill="#eef5f0">myfrontierai.com</text>
+</svg>
