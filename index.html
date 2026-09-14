@@ -25,6 +25,7 @@ h1{font:800 clamp(2.5rem,7vw,3.9rem)/1.04 "JetBrains Mono",monospace;color:var(-
 h2{font:800 1.5rem "JetBrains Mono",monospace;color:var(--head);margin:3.2rem 0 1.2rem;border-left:5px solid var(--c2);padding-left:.9rem}p{max-width:64ch}strong{color:var(--head)}
 .notice{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--c2);border-radius:10px;padding:1rem 1.2rem;margin:1.5rem 0}
 .focus{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem}.card{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:12px;padding:1.3rem}.card h3{font:700 1rem "JetBrains Mono",monospace;color:var(--head);margin:0 0 .5rem}.card p{margin:0}
+.status-scroll{overflow-x:auto;margin:1.4rem 0;border:1px solid var(--line);border-radius:10px}.status-scroll:focus-visible{outline:3px solid var(--accent);outline-offset:3px}table{width:100%;min-width:650px;border-collapse:collapse;font-size:.96rem;line-height:1.5}caption{text-align:left;padding:1rem;background:var(--panel);color:var(--dim);font:.72rem/1.5 "JetBrains Mono",monospace}th,td{padding:1rem .85rem;text-align:left;vertical-align:top;border-top:1px solid var(--line);overflow-wrap:break-word}thead th{font:700 .72rem/1.5 "JetBrains Mono",monospace;color:var(--accent-soft);background:var(--panel)}tbody th{width:19%;color:var(--head);font-weight:600}td:nth-child(2){width:16%;font-weight:600;color:var(--accent-soft)}.evidence-note{color:var(--dim);font-size:1rem}
 footer{margin-top:3.6rem;border-top:1px solid var(--line);padding-top:1.4rem;color:var(--dim);font:.74rem/1.55 "JetBrains Mono",monospace}
 @media(max-width:640px){.focus{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -43,11 +44,12 @@ footer{margin-top:3.6rem;border-top:1px solid var(--line);padding-top:1.4rem;col
 <section id="idea">
 <h2>The idea</h2>
 <p>MyFrontierAI is a personal AI operating environment: notes, projects, models, policies, and tools connected so that intelligence can work across context without making any single vendor, model, or platform the permanent center.</p>
-<p><strong>Sovereign by design.</strong> Your data remains under your authority. External processing occurs only under explicit policy, for an authorized purpose, and through an observable delegation.</p>
+<p><strong>Sovereign by design.</strong> Frontier's governing policy requires a defined purpose, explicit authorization and an observable record for external processing. Implementation and enforcement are assessed separately from the written rule.</p>
 <div class="notice"><strong>What “sovereign AI” means here.</strong> User-controlled computing, data governance, model selection, delegation policy, and technological autonomy. It does not refer to political sovereignty, legal immunity, or affiliation with the sovereign-citizen movement.</div>
 </section>
 <section id="capabilities">
 <h2>What Frontier is designed to support</h2>
+<p>Frontier is an evolving personal AI environment. Its Constitution defines the governing requirements; implementation proceeds through building, testing, observation and revision. A written policy alone is not evidence that a capability is operational or a control is enforced.</p>
 <div class="focus">
 <div class="card" style="--c:var(--c0)"><h3>Second Brain (PARA + RAG)</h3><p>Knowledge organized and made searchable by meaning, with explicit boundaries for what may be indexed, synchronized, or delegated.</p></div>
 <div class="card" style="--c:var(--c2)"><h3>Panel of Experts</h3><p>Multiple local and external models used as interchangeable specialists, with disagreement and uncertainty preserved rather than flattened.</p></div>
@@ -55,9 +57,26 @@ footer{margin-top:3.6rem;border-top:1px solid var(--line);padding-top:1.4rem;col
 <div class="card" style="--c:var(--c5)"><h3>Sovereign Architecture</h3><p>A zero-trust foundation combining local capability, network isolation, controlled delegation, backup, recovery, and auditability.</p></div>
 </div>
 </section>
+<section id="capability-status" aria-labelledby="status-heading">
+<h2 id="status-heading">Capability status</h2>
+<p>Prepared September 14, 2026 from retained project records. Each status describes the bounded capability at its evidence date. This is not a live health report or a guarantee of current availability.</p>
+<p id="status-key"><strong>Operational:</strong> observed in use. <strong>Built and tested:</strong> demonstrated within a stated test scope. <strong>Designed:</strong> documented approach with deployment unverified. <strong>Proposed:</strong> a next step awaiting a decision and implementation.</p>
+<div class="status-scroll" role="region" aria-label="Capability evidence table, horizontally scrollable on small screens" tabindex="0">
+<table aria-describedby="status-key"><caption>Selected capabilities · evidence reviewed September 14, 2026</caption>
+<thead><tr><th scope="col">Capability</th><th scope="col">Status at evidence date</th><th scope="col">Dated evidence</th><th scope="col">Material limitation</th></tr></thead>
+<tbody>
+<tr><th scope="row">Monitoring and daily digest</th><td>Operational</td><td>September 7, 2026: read-only audit observed the scheduled heartbeat and 15 active monitors. September 11: owner-reported notification delivery test.</td><td>Evidence covers the observed checks and delivery test, not every failure path, recovery or runtime enforcement.</td></tr>
+<tr><th scope="row">Policy context at session startup</th><td>Built and tested</td><td>September 7, 2026: native startup traces and isolated filesystem allow/deny tests.</td><td>Verified in the tested sessions and permission profiles; written context is not a universal execution gate.</td></tr>
+<tr><th scope="row">Independent architecture review</th><td>Built and tested</td><td>September 11, 2026: completed model review; exact input, native result and filed response verified.</td><td>A bounded review of the September 7 snapshot, not a fresh operational test or approval to deploy its proposals.</td></tr>
+<tr><th scope="row">Durable workflow orchestration</th><td>Designed</td><td>September 11, 2026: recorded architecture decision retains workflow-specific orchestration as a candidate.</td><td>No deployed durable orchestration verified here; control-plane authority remains under review.</td></tr>
+<tr><th scope="row">Broader automatic recovery</th><td>Proposed</td><td>September 11, 2026: audit reconciliation describes bounded, approved recovery playbooks as a next step.</td><td>No new recovery authority granted. A failed report does not itself enforce a stop or authorize repair.</td></tr>
+</tbody></table>
+</div>
+<p class="evidence-note">These are publishable summaries of private project records. Raw logs and protected configuration are not published. Capabilities without sufficient evidence are omitted; constitutional requirements remain governing requirements regardless of implementation status.</p>
+</section>
 <section>
 <h2>Built in the open</h2>
-<p>Everything presented here is grounded in systems I am actively building, operating, testing, or governing—not merely concepts I have read about.</p>
+<p>I publish selected artifacts and lessons from building Frontier, with dated evidence to distinguish what has been observed, tested, designed or proposed.</p>
 <p>I am documenting the build, the failures, the governing decisions, and the lessons that emerge from creating a sovereign personal AI system in practice.</p>
 <div class="actions"><a class="btn" href="constitution.html">Read the Constitution →</a><a class="btn secondary" href="mailto:patrick@patrickyaeger.com?subject=MyFrontierAI">Contact Patrick</a></div>
 </section>

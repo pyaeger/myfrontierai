@@ -1,8 +1,10 @@
 # Frontier
 
+This repository contains the public MyFrontierAI website and the published Frontier Constitution. It documents selected aspects of the broader Frontier project.
+
 **Frontier** is Patrick Yaeger’s independent personal AI research and engineering project: a governed, local-first environment for exploring how local models, persistent knowledge, external intelligence, tools, and agents can extend human capability without surrendering human authority.
 
-🌐 **Canonical site:** https://myfrontierai.com  
+🌐 **Public site:** https://myfrontierai.com<br>
 📜 **The Frontier Constitution:** https://myfrontierai.com/constitution.html  
 👤 **Author:** https://patrickyaeger.com
 
@@ -22,13 +24,17 @@ Frontier is not defined by a single model, vendor, framework, or machine. Its du
 
 ## Governance
 
-Frontier is governed by **The Frontier Constitution**, a public charter for sovereign, human-directed personal AI. Version 1.0 is the frozen canonical public release.
+Frontier is governed by **The Frontier Constitution**, a public charter for sovereign, human-directed personal AI. Version 1.0 is the frozen public release. Urlicht remains Patrick’s governing source; GitHub is a public distribution and contribution venue. The unchanged charter, license, release history and adaptation guidance are available in [frontier-constitution](https://github.com/pyaeger/frontier-constitution).
 
 The Constitution establishes principles including human authority, policy before tooling, local capability as a foundation, model agnosticism, explicit delegation, zero trust, auditability, multiple perspectives for important decisions, deliberate evolution, and epistemic integrity.
 
 ## Status
 
-Frontier is an evolving personal research and engineering project. Public materials document selected architecture, principles, experiments, and lessons; they do not expose private data, credentials, personal knowledge stores, or protected system configuration.
+Frontier is an evolving personal AI environment. Its Constitution defines the governing requirements; implementation proceeds through building, testing, observation and revision. A written policy alone is not evidence that a capability is operational or a control is enforced.
+
+Frontier's governing policy requires a defined purpose, explicit authorization and an observable record for external processing. Implementation and enforcement are assessed separately from the written rule.
+
+The [dated capability-status table](https://myfrontierai.com/#capability-status), prepared September 14, 2026, distinguishes Operational, Built and tested, Designed and Proposed. Each row names the evidence date, nature of the check and material limitation. These are summaries of retained records, not a live health report. Public materials do not expose private data, credentials, personal knowledge stores, or protected system configuration.
 
 ## License
 
