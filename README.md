@@ -24,7 +24,7 @@ Frontier is not defined by a single model, vendor, framework, or machine. Its du
 
 ## Governance
 
-Frontier is governed by **The Frontier Constitution**, a public charter for sovereign, human-directed personal AI. Version 1.0 is the frozen public release. Urlicht remains Patrick’s governing source; GitHub is a public distribution and contribution venue. The unchanged charter, license, release history and adaptation guidance are available in [frontier-constitution](https://github.com/pyaeger/frontier-constitution).
+Frontier is governed by **The Frontier Constitution**, a public charter for sovereign, human-directed personal AI. Version 1.0 is the frozen public release. Patrick’s private knowledge system remains the canonical governing source; GitHub is a public distribution and contribution venue. The unchanged charter, license, release history and adaptation guidance are available in [frontier-constitution](https://github.com/pyaeger/frontier-constitution).
 
 The Constitution establishes principles including human authority, policy before tooling, local capability as a foundation, model agnosticism, explicit delegation, zero trust, auditability, multiple perspectives for important decisions, deliberate evolution, and epistemic integrity.
 
