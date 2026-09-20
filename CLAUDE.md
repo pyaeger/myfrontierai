@@ -7,8 +7,8 @@ project. Last updated 2026-09-20.
 
 The public MyFrontierAI website and the published Frontier Constitution.
 Frontier is Patrick Yaeger's independent personal AI project. The canonical
-governing source is **Urlicht**, Patrick's private knowledge system; GitHub is
-a public distribution venue, not the system of record.
+governing source is Patrick's private knowledge system; GitHub is a public
+distribution venue, not the system of record.
 
 Related: `pyaeger/frontier-constitution` holds the charter, license, release
 history and adaptation guidance.
@@ -79,7 +79,7 @@ is not evidence that a control is enforced.**
 
 ## Canonical records
 
-Held in Patrick's Google Drive, `Urlicht` folder (access required):
+Held in Patrick's Google Drive, in the canonical-source folder (access required):
 
 - **Frontier Provenance Ledger** — the full dated chronology, evidence classes,
   negative findings, and drafting rules. Safe to quote and to share.
@@ -110,10 +110,16 @@ As of 2026-09-20 these were still true; check before reporting them:
 
 ## Naming
 
-**Frontier** is the project. **MyFrontierAI** is the public site. **Urlicht** is
-the governing knowledge source and is referenced publicly by deliberate choice.
-Hermes and related component names are internal; keep them out of public copy
-unless Patrick introduces them.
+**Frontier** is the project. **MyFrontierAI** is the public site.
+
+The private knowledge system that serves as the canonical governing source has
+an internal codename. **Do not write that codename into any public file, page,
+commit message, or comment.** Refer to it as "the canonical source" or "Patrick's
+private knowledge system". The same applies to Hermes and other component names:
+internal unless Patrick introduces them publicly himself.
+
+If you find the codename in public material, treat it as an exposure to report,
+not as evidence that publishing it was intended.
 
 ## Tone
 
