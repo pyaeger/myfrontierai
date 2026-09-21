@@ -95,8 +95,14 @@ If asked to write anything about Frontier's history, read the ledger first.
 - Personal content in the 2026-01-28 genesis document — it contains health and
   financial detail written as a private brief. Its architecture sections are
   quotable; the rest is not. Screenshots of it are the specific risk.
-- Any credential. A Telegram bot token was found in plaintext in Drive in
-  August 2026; treat that document as a credential file.
+- Any credential. Never publish, quote or paste one, from any source.
+
+  *Resolved 2026-09-21 — do not re-raise.* A Telegram bot token found in
+  plaintext in Drive was rotated on or before 2026-08-23; the replacement is in
+  Bitwarden. Verified by comparing the stored secret against Bitwarden: same bot
+  ID, different secret, and a Telegram bot has exactly one live token at a time,
+  so the original was necessarily revoked. The Drive document was redacted and
+  retitled the same day. **Nothing in the archive is a live credential.**
 
 ## Open site items — verify current state before acting
 
@@ -120,6 +126,24 @@ internal unless Patrick introduces them publicly himself.
 
 If you find the codename in public material, treat it as an exposure to report,
 not as evidence that publishing it was intended.
+
+## Explain the git and GitHub work as you do it
+
+Patrick has used git and GitHub before, but years ago, and wants the working
+knowledge back. When doing repository work for him, narrate it: name the
+command, say what it does, say what state it leaves things in, and say why that
+step exists rather than some other one. Cover the fundamentals without waiting
+to be asked — commit, branch, push, pull request, draft, merge, remote-tracking
+branch, fetch versus pull, force-with-lease.
+
+Teach in the flow of real work, not as a separate lecture. A sentence at the
+point of action beats a tutorial afterwards. Show the command and its actual
+output rather than describing it in the abstract. Where a step is a convention
+rather than a technical requirement, say which it is — the difference matters
+for knowing when a rule can be broken.
+
+Do not let this slow delivery or turn into filler. If a step is genuinely
+routine and was explained recently, one clause is enough.
 
 ## Tone
 
