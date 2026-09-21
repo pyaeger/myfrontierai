@@ -95,8 +95,14 @@ If asked to write anything about Frontier's history, read the ledger first.
 - Personal content in the 2026-01-28 genesis document — it contains health and
   financial detail written as a private brief. Its architecture sections are
   quotable; the rest is not. Screenshots of it are the specific risk.
-- Any credential. A Telegram bot token was found in plaintext in Drive in
-  August 2026; treat that document as a credential file.
+- Any credential. Never publish, quote or paste one, from any source.
+
+  *Resolved 2026-09-21 — do not re-raise.* A Telegram bot token found in
+  plaintext in Drive was rotated on or before 2026-08-23; the replacement is in
+  Bitwarden. Verified by comparing the stored secret against Bitwarden: same bot
+  ID, different secret, and a Telegram bot has exactly one live token at a time,
+  so the original was necessarily revoked. The Drive document was redacted and
+  retitled the same day. **Nothing in the archive is a live credential.**
 
 ## Open site items — verify current state before acting
 
