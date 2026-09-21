@@ -42,6 +42,12 @@ The [dated capability-status table](https://myfrontierai.com/#capability-status)
 
 That license does **not** automatically apply to the Frontier name or branding, website design, artwork or iconostasis imagery, software or source code, private data, personal knowledge stores, system configurations, prompts, credentials, or other Frontier materials unless a separate license explicitly says so.
 
+**The site's own code and markup** — the HTML structure, CSS and JavaScript of `index.html` and `constitution.html`, plus `CLAUDE.md` and this README — are licensed under the **MIT License**. The split runs *through* `constitution.html`: its layout and styling are MIT, the charter text it carries is CC BY-SA 4.0.
+
+**The Frontier and MyFrontierAI names, and the visual identity around them, are reserved.** The one exception is the iconostasis image *"Themis, the Order That Endures"*, which may be reused with that credit.
+
+The full terms, and which file falls where, are in **[LICENSE](LICENSE)**.
+
 ## Independence
 
 Frontier is Patrick Yaeger’s independent personal project. It represents his personal work and views and is not a policy, system, endorsement, or position of any employer, client, customer, or affiliated organization. No nonpublic organizational data, systems, confidential information, or work product are incorporated into Frontier.
