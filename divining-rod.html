@@ -337,7 +337,7 @@ Added as the <strong>7th item</strong> in the (still-pending) implementation pla
   d.addEventListener("click", function (e) { if (e.target !== img && e.target !== btn) shut(); });
   d.addEventListener("cancel", function (e) { e.preventDefault(); shut(); });
   document.addEventListener("keydown", function (e) { if (d.open && e.key === "Escape") { e.preventDefault(); shut(); } });
-  d.addEventListener("close", cleanup);
+  d.addEventListener("close", function () { if (!d.open) cleanup(); });
 })();
 </script>
 </body>
