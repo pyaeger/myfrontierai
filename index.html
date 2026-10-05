@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){var h=document.documentElement;h.classList.add("js");try{if(localStorage.getItem("myfrontierai-theme")==="light")h.classList.add("light")}catch(e){}})();</script>
 <title>MyFrontierAI — a governed, sovereign personal AI</title>
 <meta name="description" content="MyFrontierAI is Patrick Yaeger’s independent project exploring governed, local-first personal AI, model-agnostic orchestration, and human-directed intelligence.">
 <meta property="og:type" content="website">
@@ -33,10 +34,14 @@ h2{font:800 1.5rem "JetBrains Mono",monospace;color:var(--head);margin:3.2rem 0 
 .status-scroll{overflow-x:auto;margin:1.4rem 0;border:1px solid var(--line);border-radius:10px}.status-scroll:focus-visible{outline:3px solid var(--accent);outline-offset:3px}table{width:100%;min-width:650px;border-collapse:collapse;font-size:.96rem;line-height:1.5}caption{text-align:left;padding:1rem;background:var(--panel);color:var(--dim);font:.72rem/1.5 "JetBrains Mono",monospace}th,td{padding:1rem .85rem;text-align:left;vertical-align:top;border-top:1px solid var(--line);overflow-wrap:break-word}thead th{font:700 .72rem/1.5 "JetBrains Mono",monospace;color:var(--accent-soft);background:var(--panel)}tbody th{width:19%;color:var(--head);font-weight:600}td:nth-child(2){width:16%;font-weight:600;color:var(--accent-soft)}.evidence-note{color:var(--dim);font-size:1rem}
 footer{margin-top:3.6rem;border-top:1px solid var(--line);padding-top:1.4rem;color:var(--dim);font:.74rem/1.55 "JetBrains Mono",monospace}
 @media(max-width:640px){.focus{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.themebtn{position:fixed;top:14px;right:18px;z-index:10;font:700 .64rem "JetBrains Mono",monospace;letter-spacing:.18em;text-transform:uppercase;background:var(--panel);color:var(--dim);border:1px solid var(--line);border-radius:8px;padding:.5em .9em;cursor:pointer;transition:.15s}html:not(.js) .themebtn{display:none}.themebtn:hover{color:var(--accent);border-color:var(--accent);box-shadow:0 0 14px -4px var(--accent)}.themebtn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+html.light{--bg:#f4f7f5;--panel:#ffffff;--line:#d3e0d8;--accent:#0a7d2e;--accent-soft:#0a7d2e;--accent2:#065a83;--violet:#6b3fb5;--text:#16201a;--dim:#4a5a50;--head:#0a3d22;--c0:#0a7d2e;--c2:#065a83;--c4:#6b3fb5;--c5:#a3236a;color-scheme:light}html.light body{background:var(--bg)}html.light .btn{color:#fff}html.light .btn.secondary{color:var(--text)}html.light .badge{background:rgba(10,125,46,.08);border-color:rgba(10,125,46,.35)}html.light dialog.lightbox::backdrop{background:rgba(244,247,245,.96)}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
+<button type="button" class="themebtn" aria-label="Light theme" aria-pressed="false"><span aria-hidden="true">◐</span> Theme</button>
+<script>(function(){var h=document.documentElement,b=document.querySelector(".themebtn");function s(){b.setAttribute("aria-pressed",h.classList.contains("light")?"true":"false")}s();b.addEventListener("click",function(){var l=h.classList.toggle("light");try{localStorage.setItem("myfrontierai-theme",l?"light":"dark")}catch(e){}s()})})();</script>
 <div class="page">
 <header>
 <div class="kicker">A governed personal AI · The latent country</div>
