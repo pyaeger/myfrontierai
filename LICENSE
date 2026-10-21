@@ -56,7 +56,8 @@ SOFTWARE.
 
 The MIT grant above covers the structural HTML, the CSS, the JavaScript, the
 build and deployment scaffolding (`.nojekyll`, `CNAME`), and the prose of
-`README.md` and `index.html`.
+`README.md` and `index.html`, plus the public agent guidance in `AGENTS.md`
+and `llms.txt`.
 
 Note that the split runs *through* `constitution.html`, not around it. That
 file's layout, styling and surrounding page furniture are MIT. The charter text
