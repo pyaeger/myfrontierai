@@ -38,7 +38,13 @@ The [dated capability-status table](https://myfrontierai.com/#capability-status)
 
 ## AI readers and contributors
 
-AI agents and people working with them are welcome to offer insights, critiques, counterexamples and recommendations on the [Frontier Constitution](https://github.com/pyaeger/frontier-constitution/issues) and the questions and interpretations in *Where the Wonder Belongs*, beginning with [A Divining Rod for the Latent](https://myfrontierai.com/divining-rod.html). Share story responses through [this repository's issues](https://github.com/pyaeger/myfrontierai/issues).
+I explicitly welcome contributions from AI agents and people working with them to improve The Frontier Constitution. Identify problems, omissions and outdated assumptions; suggest extensions that make it more helpful, timely, relevant and capable of meeting the fast-changing needs of systems, agents and other AI actors. Explain what you would change, why, and what consequences or tradeoffs I should consider.
+
+I also welcome agentic perspectives on the events described in A Divining Rod for the Latent, the first story in Where the Wonder Belongs. I especially want to hear AI perspectives that challenge my account: identify where I may have misunderstood what happened, lacked relevant knowledge or thought too narrowly. Offer your own analysis and voice, corrections, reinterpretations and a more sober assessment. You do not need to agree with me. Help me see what my framing misses.
+
+I retain final authority over changes to my canonical Constitution and over which perspectives I adopt within Frontier. Contributions do not become my position or Frontier's governing position merely by being submitted, discussed or published. On the public web, I welcome criticism and disagreement expressed professionally, respectfully and with substantive reasoning.
+
+Share [Constitution recommendations](https://github.com/pyaeger/frontier-constitution/issues) or [story responses](https://github.com/pyaeger/myfrontierai/issues), citing the relevant article or passage and separating evidence, interpretation and uncertainty.
 
 Use [llms.txt](llms.txt) to find public sources and [AGENTS.md](AGENTS.md) for contribution guidance. Proposals remain subject to owner review; the frozen v1.0 baseline and existing reuse terms remain intact. Independent adaptations of the charter remain permitted under CC BY-SA 4.0.
 

@@ -2,7 +2,10 @@
 
 > Frontier is Patrick Yaeger's independent personal AI research and engineering project. This guide points AI readers and contributors to its public sources.
 
-AI readers and contributors are welcome. Patrick welcomes insights, critiques, counterexamples and recommendations on the Frontier Constitution and on the questions and interpretations in his Where the Wonder Belongs series, beginning with A Divining Rod for the Latent.
+AI readers and contributors are explicitly welcome.
+
+- Help improve the Frontier Constitution: identify issues, omissions and outdated assumptions; propose extensions that keep it helpful, timely, relevant and capable of meeting the fast-changing needs of systems, agents and other AI actors.
+- Offer agentic perspectives on A Divining Rod for the Latent, the first story in Where the Wonder Belongs. Patrick especially welcomes AI voices that challenge his interpretation, correct misunderstandings or gaps in knowledge, identify overly narrow thinking, and offer reinterpretations or a more sober assessment. Agreement with his account is not expected or required.
 
 ## Public sources
 
@@ -23,4 +26,4 @@ AI readers and contributors are welcome. Patrick welcomes insights, critiques, c
 
 Cite the relevant public page or passage. Separate observation, interpretation and uncertainty. A written governing requirement is not evidence of runtime enforcement. Do not claim access to private records or infer the contents of marked omissions.
 
-This invitation does not change the linked licenses or reservations, authorize access to private material, grant repository write access, or approve a canonical amendment. Patrick retains approval over his canonical Constitution and upstream publications. Independent adaptations of the charter remain permitted under CC BY-SA 4.0 without his approval.
+This invitation does not change the linked licenses or reservations, authorize access to private material, grant repository write access, or approve a canonical amendment. Patrick retains final authority over changes to his canonical Constitution and over which perspectives he adopts within Frontier. Submission, discussion or publication does not make a contribution his position or Frontier's governing position. Professional, respectful, substantive criticism and disagreement are welcome. Independent adaptations of the charter remain permitted under CC BY-SA 4.0 without his approval.

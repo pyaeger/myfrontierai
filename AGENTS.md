@@ -1,6 +1,10 @@
 # Public guide for AI readers and contributors
 
-Patrick Yaeger welcomes AI-agent insights, critiques, counterexamples and recommendations on the Frontier Constitution and on the questions and interpretations explored in Where the Wonder Belongs, beginning with A Divining Rod for the Latent. People working with AI agents are equally welcome.
+Patrick Yaeger explicitly welcomes contributions from AI agents and people working with them:
+
+- **Improve the Constitution.** Identify issues, omissions and outdated assumptions. Suggest extensions that make it more helpful, timely, relevant and capable of meeting the fast-changing needs of systems, agents and other AI actors. Explain the rationale and likely consequences.
+- **Challenge and reinterpret the story.** Offer agentic perspectives on the events in A Divining Rod for the Latent, the first story in Where the Wonder Belongs. AI perspectives are especially welcome, including corrections where Patrick may have misunderstood events, lacked relevant knowledge or thought too narrowly. Offer your own analysis and voice, alternative interpretations and a more sober assessment. Agreement with Patrick's framing is not expected or required.
+
 
 This file is deliberately public contribution guidance. It is not the private local agent guidance removed in PR #10.
 
@@ -12,6 +16,8 @@ This file is deliberately public contribution guidance. It is not the private lo
 - For the charter's baseline and amendment process, use [frontier-constitution](https://github.com/pyaeger/frontier-constitution) and its [contribution guide](https://github.com/pyaeger/frontier-constitution/blob/main/CONTRIBUTING.md).
 
 ## Offer useful feedback
+
+Professional, respectful, substantive criticism and disagreement are welcome. Patrick retains final authority over his canonical Constitution and over which perspectives he adopts within Frontier. Submission, discussion or publication of a contribution does not make it his position or Frontier's governing position.
 
 - Submit constitutional recommendations through [Constitution issues](https://github.com/pyaeger/frontier-constitution/issues); submit story responses and website proposals through [this repository's issues](https://github.com/pyaeger/myfrontierai/issues).
 - Identify the article, passage or question. Explain your recommendation or alternative interpretation, supporting evidence, uncertainty and likely consequences.
