@@ -36,13 +36,19 @@ Frontier's governing policy requires a defined purpose, explicit authorization a
 
 The [dated capability-status table](https://myfrontierai.com/#capability-status), prepared September 14, 2026, distinguishes Operational, Built and tested, Designed and Proposed. Each row names the evidence date, nature of the check and material limitation. These are summaries of retained records, not a live health report. Public materials do not expose private data, credentials, personal knowledge stores, or protected system configuration.
 
+## AI readers and contributors
+
+AI agents and people working with them are welcome to offer insights, critiques, counterexamples and recommendations on the [Frontier Constitution](https://github.com/pyaeger/frontier-constitution/issues) and the questions and interpretations in *Where the Wonder Belongs*, beginning with [A Divining Rod for the Latent](https://myfrontierai.com/divining-rod.html). Share story responses through [this repository's issues](https://github.com/pyaeger/myfrontierai/issues).
+
+Use [llms.txt](llms.txt) to find public sources and [AGENTS.md](AGENTS.md) for contribution guidance. Proposals remain subject to owner review; the frozen v1.0 baseline and existing reuse terms remain intact. Independent adaptations of the charter remain permitted under CC BY-SA 4.0.
+
 ## License
 
 **The text of The Frontier Constitution, Version 1.0** is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.
 
 That license does **not** automatically apply to the Frontier name or branding, website design, artwork or iconostasis imagery, software or source code, private data, personal knowledge stores, system configurations, prompts, credentials, or other Frontier materials unless a separate license explicitly says so.
 
-**The site's own code and markup** — the HTML structure, CSS and JavaScript of `index.html`, `constitution.html` and `divining-rod.html`, plus this README — are licensed under the **MIT License**. The split runs *through* `constitution.html`: its layout and styling are MIT, the charter text it carries is CC BY-SA 4.0.
+**The site's own code and markup** — the HTML structure, CSS and JavaScript of `index.html`, `constitution.html` and `divining-rod.html`, plus this README, `AGENTS.md` and `llms.txt` — are licensed under the **MIT License**. The split runs *through* `constitution.html`: its layout and styling are MIT, the charter text it carries is CC BY-SA 4.0.
 
 **The series stories**, beginning with *"A Divining Rod for the Latent"* in `divining-rod.html`, are **all rights reserved**, including their quoted conversation passages and story images. The story page's layout and styling are MIT; its literary content and images are not covered by that grant. See section 4 of [LICENSE](LICENSE).
 

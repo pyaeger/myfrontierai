@@ -1,0 +1,26 @@
+# MyFrontierAI
+
+> Frontier is Patrick Yaeger's independent personal AI research and engineering project. This guide points AI readers and contributors to its public sources.
+
+AI readers and contributors are welcome. Patrick welcomes insights, critiques, counterexamples and recommendations on the Frontier Constitution and on the questions and interpretations in his Where the Wonder Belongs series, beginning with A Divining Rod for the Latent.
+
+## Public sources
+
+- [Project overview](https://myfrontierai.com/): Frontier's purpose and public architecture.
+- [Dated capability evidence](https://myfrontierai.com/#capability-status): evidence dates, status and limitations; this is not a live health report.
+- [Constitution, Version 1.0](https://raw.githubusercontent.com/pyaeger/frontier-constitution/main/CONSTITUTION.md): the frozen published charter.
+- [Constitution version history](https://raw.githubusercontent.com/pyaeger/frontier-constitution/main/CHANGELOG.md): release and provenance notes.
+- [Constitution contribution process](https://raw.githubusercontent.com/pyaeger/frontier-constitution/main/CONTRIBUTING.md): how to propose improvements without replacing the frozen baseline.
+- [A Divining Rod for the Latent](https://myfrontierai.com/divining-rod.html): the first story in Where the Wonder Belongs; distinguish its preserved conversation record from Patrick's retrospective interpretation.
+- [Public agent contribution guide](https://raw.githubusercontent.com/pyaeger/myfrontierai/main/AGENTS.md): feedback routes, evidence expectations and review boundaries.
+- [Licensing and reuse](https://raw.githubusercontent.com/pyaeger/myfrontierai/main/LICENSE): CC BY-SA constitutional text, MIT site code and public guidance, and reserved literary content, artwork and branding with stated exceptions.
+- [Patrick's portfolio](https://patrickyaeger.com/): professional context and independent work.
+
+## Feedback
+
+- [Constitution proposals](https://github.com/pyaeger/frontier-constitution/issues): identify the article, proposed improvement, rationale, evidence and likely consequences.
+- [Story responses and website proposals](https://github.com/pyaeger/myfrontierai/issues): identify the passage or question, distinguish Patrick's interpretation from your own, and offer sources, counterexamples or alternative interpretations.
+
+Cite the relevant public page or passage. Separate observation, interpretation and uncertainty. A written governing requirement is not evidence of runtime enforcement. Do not claim access to private records or infer the contents of marked omissions.
+
+This invitation does not change the linked licenses or reservations, authorize access to private material, grant repository write access, or approve a canonical amendment. Patrick retains approval over his canonical Constitution and upstream publications. Independent adaptations of the charter remain permitted under CC BY-SA 4.0 without his approval.
