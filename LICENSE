@@ -1,7 +1,7 @@
 LICENSES FOR THIS REPOSITORY
 
-This repository is not under a single license. Three different things live in
-it and they are licensed differently. Read this file before re-using anything.
+This repository is not under a single license. Its materials are licensed
+differently. Read this file before re-using anything.
 
 =======================================================================
 1. THE CONSTITUTIONAL TEXT — CC BY-SA 4.0
@@ -55,12 +55,18 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 The MIT grant above covers the structural HTML, the CSS, the JavaScript, the
-build and deployment scaffolding (`.nojekyll`, `CNAME`), `CLAUDE.md`, and the
-prose of `README.md` and `index.html`.
+build and deployment scaffolding (`.nojekyll`, `CNAME`), and the prose of
+`README.md` and `index.html`.
 
 Note that the split runs *through* `constitution.html`, not around it. That
 file's layout, styling and surrounding page furniture are MIT. The charter text
 it carries is not — that is section 1.
+
+`CLAUDE.md` was removed from the current public tree on October 5, 2026
+(PR #10) and is listed in `.gitignore`. Previously distributed copies remain
+under the MIT License under which they were released; removal does not revoke
+rights already granted. This notice does not extend the grant to unpublished
+local guidance.
 
 =======================================================================
 3. ARTWORK AND BRANDING — RESERVED, WITH ONE EXCEPTION
