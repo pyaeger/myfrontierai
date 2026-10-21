@@ -42,7 +42,11 @@ The [dated capability-status table](https://myfrontierai.com/#capability-status)
 
 That license does **not** automatically apply to the Frontier name or branding, website design, artwork or iconostasis imagery, software or source code, private data, personal knowledge stores, system configurations, prompts, credentials, or other Frontier materials unless a separate license explicitly says so.
 
-**The site's own code and markup** — the HTML structure, CSS and JavaScript of `index.html` and `constitution.html`, plus `CLAUDE.md` and this README — are licensed under the **MIT License**. The split runs *through* `constitution.html`: its layout and styling are MIT, the charter text it carries is CC BY-SA 4.0.
+**The site's own code and markup** — the HTML structure, CSS and JavaScript of `index.html`, `constitution.html` and `divining-rod.html`, plus this README — are licensed under the **MIT License**. The split runs *through* `constitution.html`: its layout and styling are MIT, the charter text it carries is CC BY-SA 4.0.
+
+**The series stories**, beginning with *"A Divining Rod for the Latent"* in `divining-rod.html`, are **all rights reserved**, including their quoted conversation passages and story images. The story page's layout and styling are MIT; its literary content and images are not covered by that grant. See section 4 of [LICENSE](LICENSE).
+
+**Historical distribution:** `CLAUDE.md` was removed from the current public tree on October 5, 2026 ([PR #10](https://github.com/pyaeger/myfrontierai/pull/10)) and is listed in `.gitignore`. Previously distributed copies remain under the MIT License under which they were released; removal does not revoke rights already granted. This notice does not extend the grant to unpublished local guidance.
 
 **The Frontier and MyFrontierAI names, and the visual identity around them, are reserved.** The one exception is the iconostasis image *"Themis, the Order That Endures"*, which may be reused with that credit.
 
