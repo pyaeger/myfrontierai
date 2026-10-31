@@ -34,7 +34,7 @@ Frontier is an evolving personal AI environment. Its Constitution defines the go
 
 Frontier's governing policy requires a defined purpose, explicit authorization and an observable record for external processing. Implementation and enforcement are assessed separately from the written rule.
 
-The [dated capability-status table](https://myfrontierai.com/#capability-status), prepared September 14, 2026, distinguishes Operational, Built and tested, Designed and Proposed. Each row names the evidence date, nature of the check and material limitation. These are summaries of retained records, not a live health report. Public materials do not expose private data, credentials, personal knowledge stores, or protected system configuration.
+The [dated capability-status table](https://myfrontierai.com/#capability-status), prepared September 14, 2026 and reviewed October 31, 2026, distinguishes Operational, Built and tested, Designed, Proposed and Paused. Each row names the evidence date, nature of the check and material limitation. These are summaries of retained records, not a live health report. Public materials do not expose private data, credentials, personal knowledge stores, or protected system configuration.
 
 ## License
 
