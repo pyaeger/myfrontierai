@@ -46,6 +46,8 @@ That license does **not** automatically apply to the Frontier name or branding, 
 
 **The series stories**, beginning with *"A Divining Rod for the Latent"* in `divining-rod.html`, are **all rights reserved**, including their quoted conversation passages and story images. The story page's layout and styling are MIT; its literary content and images are not covered by that grant. See section 4 of [LICENSE](LICENSE).
 
+**The Examination Room**, the scripted film on `examination-room.html`, is an interlude in the series and is not licensed for reuse, including its script, captions and images. That page's layout and styling are MIT. See section 4 of [LICENSE](LICENSE).
+
 **Historical distribution:** `CLAUDE.md` was removed from the current public tree on October 5, 2026 ([PR #10](https://github.com/pyaeger/myfrontierai/pull/10)) and is listed in `.gitignore`. Previously distributed copies remain under the MIT License under which they were released; removal does not revoke rights already granted. This notice does not extend the grant to unpublished local guidance.
 
 **The Frontier and MyFrontierAI names, and the visual identity around them, are reserved.** The one exception is the iconostasis image *"Themis, the Order That Endures"*, which may be reused with that credit.
