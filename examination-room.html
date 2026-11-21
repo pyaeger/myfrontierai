@@ -90,6 +90,18 @@ main h3.final{border-left-color:#cfc6b4}
 .ytart text{font:500 9.5px "JetBrains Mono",monospace;fill:var(--dim)}
 .ytart .cap{font-size:8px;letter-spacing:.16em}
 .ytart .here{fill:var(--head);font-weight:700}
+.ytart.mv text{font-size:10.6px}.ytart.mv .cap{font-size:8.8px}
+.ytart.mv .b{fill:none;stroke:var(--accent);stroke-width:2.2;stroke-dasharray:1;stroke-dashoffset:0;opacity:0}.ytart.mv .b.fin{stroke-width:2.6;opacity:1}
+.ytart.mv .d{stroke:var(--dim);stroke-width:1.2;stroke-dasharray:3 4;opacity:.6}.ytart.mv .ar{fill:none;stroke:var(--dim);stroke-width:1.1;opacity:.7}
+.ytart.mv .mk{transform:translate(298px,86px)}.ytart.mv .hd{transform:translate(340px,62px)}
+.ytart.mv .hd path,.ytart.mv .hd ellipse{fill:var(--bg);stroke:var(--head);stroke-width:1.1;stroke-linejoin:round;stroke-linecap:round}
+.ytart.mv.go .b{animation:lnDraw .9s linear var(--d) both,lnOut .35s ease var(--c) both}.ytart.mv.go .b.fin{animation:lnDraw 1.3s linear var(--d) both}
+.ytart.mv.go .d{animation:lnDim .35s ease var(--c) both}.ytart.mv.go .lb,.ytart.mv.go .pin{animation:lnIn .4s ease var(--d) both}.ytart.mv.go .ar{animation:lnAr .4s ease var(--a) both}
+.ytart.mv.go .mk{animation:lnMk 15s both}.ytart.mv.go .hd{animation:lnHd 15s both}
+@keyframes lnDraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}@keyframes lnOut{from{opacity:1}to{opacity:0}}@keyframes lnDim{from{opacity:0}to{opacity:.6}}@keyframes lnIn{from{opacity:0}to{opacity:1}}@keyframes lnAr{from{opacity:0}to{opacity:.7}}
+@keyframes lnMk{0%{transform:translate(14px,86px);opacity:0;animation-timing-function:ease-in-out}2%{transform:translate(14px,86px);opacity:1;animation-timing-function:ease-in-out}12.667%{transform:translate(14px,86px);opacity:1;animation-timing-function:ease-in-out}20.667%{transform:translate(58px,86px);opacity:1;animation-timing-function:ease-in-out}29.333%{transform:translate(58px,86px);opacity:1;animation-timing-function:ease-in-out}37.333%{transform:translate(126px,86px);opacity:1;animation-timing-function:ease-in-out}46%{transform:translate(126px,86px);opacity:1;animation-timing-function:ease-in-out}54%{transform:translate(194px,86px);opacity:1;animation-timing-function:ease-in-out}62.667%{transform:translate(194px,86px);opacity:1;animation-timing-function:ease-in-out}70.667%{transform:translate(262px,86px);opacity:1;animation-timing-function:ease-in-out}82.667%{transform:translate(262px,86px);opacity:1;animation-timing-function:ease-in-out}90.667%{transform:translate(298px,86px);opacity:1;animation-timing-function:ease-in-out}100%{transform:translate(298px,86px);opacity:1;animation-timing-function:ease-in-out}}
+@keyframes lnHd{0%{transform:translate(64px,24px);opacity:0;animation-timing-function:ease-in-out}2%{transform:translate(56px,34px);opacity:1;animation-timing-function:ease-in-out}5.333%{transform:translate(40px,56px);opacity:1;animation-timing-function:linear}11.333%{transform:translate(40px,116px);opacity:1;animation-timing-function:ease-in-out}14%{transform:translate(56px,52px);opacity:1;animation-timing-function:ease-in-out}18%{transform:translate(56px,52px);opacity:1;animation-timing-function:ease-in-out}22%{transform:translate(108px,56px);opacity:1;animation-timing-function:linear}28%{transform:translate(108px,116px);opacity:1;animation-timing-function:ease-in-out}30.667%{transform:translate(124px,52px);opacity:1;animation-timing-function:ease-in-out}34.667%{transform:translate(124px,52px);opacity:1;animation-timing-function:ease-in-out}38.667%{transform:translate(176px,56px);opacity:1;animation-timing-function:linear}44.667%{transform:translate(176px,116px);opacity:1;animation-timing-function:ease-in-out}47.333%{transform:translate(192px,52px);opacity:1;animation-timing-function:ease-in-out}51.333%{transform:translate(192px,52px);opacity:1;animation-timing-function:ease-in-out}55.333%{transform:translate(244px,56px);opacity:1;animation-timing-function:linear}61.333%{transform:translate(244px,116px);opacity:1;animation-timing-function:ease-in-out}64%{transform:translate(260px,52px);opacity:1;animation-timing-function:ease-in-out}68%{transform:translate(260px,52px);opacity:1;animation-timing-function:ease-in-out}72.667%{transform:translate(318px,46px);opacity:1;animation-timing-function:linear}81.333%{transform:translate(318px,116px);opacity:1;animation-timing-function:ease-in-out}88%{transform:translate(340px,62px);opacity:1;animation-timing-function:ease-in-out}94%{transform:translate(340px,58px);opacity:1;animation-timing-function:ease-in-out}100%{transform:translate(340px,62px);opacity:1;animation-timing-function:ease-in-out}}
+.lnplay{display:block;margin:-.55rem 0 .8rem auto;padding:.2rem 0;font:.7rem/1.4 "JetBrains Mono",monospace;color:var(--accent2);background:none;border:0;cursor:pointer;text-decoration:underline;text-underline-offset:.18em}.lnplay[hidden]{display:none}.lnplay:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .ytname{font-size:1.22em;line-height:1.3;text-wrap:balance}
 .ytplay,.ytgo{margin-right:.9rem;padding:.7rem 1.15rem;font:700 .84rem "JetBrains Mono",monospace;color:var(--bg);background:var(--accent2);border:1px solid var(--accent2);border-radius:8px;cursor:pointer;text-decoration:none}
 .ytgo{display:inline-block}
@@ -297,6 +309,15 @@ main .fulltext section.sec>h3{margin:1.5rem 0 .3rem}
 .stage.calm .seat{transition:none}
 .stage{position:relative}
 .stage .motion{position:absolute;right:1.15rem;top:1rem;z-index:5;margin:0;padding:.15rem 0;font-size:.6rem}
+.starts{display:none;gap:.5rem;margin-top:.6rem}
+.stage.idle .starts,.stage.ended .starts{display:flex}
+.starts button{flex:1 1 0;min-width:0;min-height:3rem;padding:.5rem .55rem;border-radius:10px;font:700 .74rem/1.25 "JetBrains Mono",monospace;color:#eef5f0;background:#0d1712;border:1px solid #2c5640;cursor:pointer;text-align:center}
+.starts .sans{flex:1.6 1 0;color:#06100b;background:#cfc6b4;border-color:#cfc6b4}
+.starts b{display:block;font-weight:700}
+.starts small{display:block;margin-top:.22rem;font-weight:400;font-size:.62rem;letter-spacing:.03em;opacity:.82}
+.starts button:focus-visible{outline:3px solid #00ff41;outline-offset:2px}
+.stage.idle .card .ctext,.stage.ended .card .ctext{height:clamp(5.2rem,calc(36vh - 4.3rem),15.7rem)}
+@media(max-width:640px){.starts{gap:.4rem}.starts button{font-size:.68rem;padding:.45rem .4rem}.starts .sans{flex:1.5 1 0}}
 footer .fst{font:inherit;color:var(--accent2);background:none;border:0;padding:0;cursor:pointer;white-space:nowrap;text-decoration:underline;text-underline-offset:.18em}
 footer .fst::after{content:"+";margin-left:.45em;font-weight:700;text-decoration:none;display:inline-block}
 footer .fst[aria-expanded="true"]::after{content:"\2013"}
@@ -406,7 +427,7 @@ footer .fullst>p{margin:.8rem 0 0}
 </div>
 </div>
 </div>
-<div class="meta"><span>A scripted experience</span><span>8 min 48 s</span><span>Published <time datetime="2026-11-08">November 8, 2026</time></span><span>Updated <time datetime="2026-11-19">November 19, 2026</time></span><span>Script and editing by Claude</span><span>Directed by Patrick Yaeger and Claude</span></div>
+<div class="meta"><span>A scripted experience</span><span>8 min 48 s</span><span>Published <time datetime="2026-11-08">November 8, 2026</time></span><span>Updated <time datetime="2026-11-21">November 21, 2026</time></span><span>Script and editing by Claude</span><span>Directed by Patrick Yaeger and Claude</span></div>
 <button type="button" class="pmotion" hidden aria-pressed="false">Show full motion</button>
 </header>
 <main>
@@ -429,7 +450,7 @@ footer .fullst>p{margin:.8rem 0 0}
 </dl>
 <p class="jump"><a href="#behind-the-story">Go behind the story: how this was made ↓</a></p>
 <div class="part hasnav" id="what-inspired-it"><nav class="parts" aria-label="The three parts of this page"><a href="#the-experience"><span>One</span>The experience</a><a href="#what-inspired-it" aria-current="true"><span>Two</span>The charge</a><a href="#claudes-assessment"><span>Three</span>The leap</a></nav><p class="partno">The video essay that inspired The Examination Room</p><h2>A history of the line</h2></div>
-<div class="yt" data-id="7O84mdxehWY" data-title="AI Doesn’t REALLY Understand. We’ve Said That Before."><svg class="ytart" viewBox="0 0 360 132" role="img" aria-label="A drawing made for this page: the line between what a machine can do and what only a mind can do, redrawn after arithmetic, chess, Go and language, and standing now at understanding."><text class="cap" x="14" y="19">WHERE THE LINE WAS DRAWN</text><line x1="14" y1="96" x2="346" y2="96" style="stroke:var(--line)" stroke-width="1.2"/><line x1="40" y1="36" x2="40" y2="96" style="stroke:var(--dim)" stroke-width="1.2" stroke-dasharray="3 4" opacity=".6"/><line x1="108" y1="36" x2="108" y2="96" style="stroke:var(--dim)" stroke-width="1.2" stroke-dasharray="3 4" opacity=".6"/><line x1="176" y1="36" x2="176" y2="96" style="stroke:var(--dim)" stroke-width="1.2" stroke-dasharray="3 4" opacity=".6"/><line x1="244" y1="36" x2="244" y2="96" style="stroke:var(--dim)" stroke-width="1.2" stroke-dasharray="3 4" opacity=".6"/><path d="M54 66H94m-5 -4l5 4l-5 4" fill="none" style="stroke:var(--dim)" stroke-width="1.1" opacity=".7"/><path d="M122 66H162m-5 -4l5 4l-5 4" fill="none" style="stroke:var(--dim)" stroke-width="1.1" opacity=".7"/><path d="M190 66H230m-5 -4l5 4l-5 4" fill="none" style="stroke:var(--dim)" stroke-width="1.1" opacity=".7"/><path d="M258 66H304m-5 -4l5 4l-5 4" fill="none" style="stroke:var(--dim)" stroke-width="1.1" opacity=".7"/><line x1="318" y1="26" x2="318" y2="96" style="stroke:var(--accent)" stroke-width="2.6"/><circle cx="318" cy="26" r="3.4" style="fill:var(--accent)"/><text x="40" y="114" text-anchor="middle">arithmetic</text><text x="108" y="114" text-anchor="middle">chess</text><text x="176" y="114" text-anchor="middle">Go</text><text x="244" y="114" text-anchor="middle">language</text><text class="here" x="318" y="114" text-anchor="middle">understanding</text></svg><p class="ytname">AI Doesn’t REALLY Understand. We’ve Said That Before. <span>A video essay by Count Grey Matter · 23 min</span></p><button type="button" class="ytplay">▶ Play it here</button> <a class="ytwatch" href="https://www.youtube.com/watch?v=7O84mdxehWY">Watch on YouTube</a><p class="ytnote">Nothing loads from YouTube until you press play. The drawing is this page’s, not the channel’s.</p></div>
+<div class="yt" data-id="7O84mdxehWY" data-title="AI Doesn’t REALLY Understand. We’ve Said That Before."><svg class="ytart mv" viewBox="0 0 392 154" role="img" aria-label="A drawing made for this page. A hand draws a line at arithmetic and a dot crosses it. The hand draws the next line at chess, then at Go, then at language, and the dot crosses each one. The last line stands at understanding: the dot waits in front of it, and the hand hovers beyond it."><text class="cap" x="14" y="16">WHERE THE LINE WAS DRAWN</text><line x1="14" y1="116" x2="378" y2="116" style="stroke:var(--line)" stroke-width="1.2"/><line class="d" style="--c:2.55s" x1="40" y1="56" x2="40" y2="116"/><path class="b" style="--d:0.8s;--c:2.55s" pathLength="1" d="M40 56V116"/><path class="ar" style="--a:4.4s" d="M54 86H94m-5 -4l5 4l-5 4"/><text class="lb" style="--d:0.8s" x="40" y="134" text-anchor="middle">arithmetic</text><line class="d" style="--c:5.2s" x1="108" y1="56" x2="108" y2="116"/><path class="b" style="--d:3.3s;--c:5.2s" pathLength="1" d="M108 56V116"/><path class="ar" style="--a:6.9s" d="M122 86H162m-5 -4l5 4l-5 4"/><text class="lb" style="--d:3.3s" x="108" y="134" text-anchor="middle">chess</text><line class="d" style="--c:7.7s" x1="176" y1="56" x2="176" y2="116"/><path class="b" style="--d:5.8s;--c:7.7s" pathLength="1" d="M176 56V116"/><path class="ar" style="--a:9.4s" d="M190 86H230m-5 -4l5 4l-5 4"/><text class="lb" style="--d:5.8s" x="176" y="134" text-anchor="middle">Go</text><line class="d" style="--c:10.2s" x1="244" y1="56" x2="244" y2="116"/><path class="b" style="--d:8.3s;--c:10.2s" pathLength="1" d="M244 56V116"/><text class="lb" style="--d:8.3s" x="244" y="134" text-anchor="middle">language</text><path class="b fin" style="--d:10.9s" pathLength="1" d="M318 46V116"/><circle class="pin" style="--d:10.9s;fill:var(--accent)" cx="318" cy="46" r="3.4"/><text class="lb here" style="--d:10.9s" x="318" y="134" text-anchor="middle">understanding</text><g class="mk"><circle r="7.4" fill="none" style="stroke:var(--head)" stroke-width="1" opacity=".35"/><circle r="4.2" style="fill:var(--head)"/></g><g class="hd"><path d="M19 -8L37 2L43 -9L24 -21Z"/><path d="M0 0L4.9 -4.1L18.9 -28.3L15.1 -30.5L1.1 -6.3Z"/><path d="M0 0L2.6 -2.2L0.6 -3.4Z" style="fill:var(--head)"/><ellipse cx="13.5" cy="-15.5" rx="9.6" ry="6.6" transform="rotate(-32 13.5 -15.5)"/><path d="M7.4 -14.2q2.2 -3.6 5.6 -2.4M10.2 -10.6q2.4 -3.4 5.6 -2.2M13.4 -7.6q2.2 -2.8 4.8 -1.8" style="fill:none"/></g></svg><button type="button" class="lnplay" hidden>↻ Draw it again</button><p class="ytname">AI Doesn’t REALLY Understand. We’ve Said That Before. <span>A video essay by Count Grey Matter · 23 min</span></p><button type="button" class="ytplay">▶ Play it here</button> <a class="ytwatch" href="https://www.youtube.com/watch?v=7O84mdxehWY">Watch on YouTube</a><p class="ytnote">Nothing loads from YouTube until you press play. The drawing is this page’s, not the channel’s. Its dot is no one’s product: many machines from many labs crossed these lines, from calculating machines to Deep Blue in 1997, AlphaGo in 2016 and the large language models.</p></div>
 <p>The video essay Claude assessed that night is <a href="https://www.youtube.com/watch?v=7O84mdxehWY">“AI Doesn’t REALLY Understand. We’ve Said That Before.”</a> by Count Grey Matter. The channel does the philosophy of minds, human and machine, in the voice of a vampire who has watched them come and go for centuries. By the channel’s own note, it is a human–AI collaboration in which Claude writes the scripts. That’s the same pattern I use with Claude. The video essay was posted October 18, 2026, the day before.</p>
 <p>It walks through every place people have drawn the line between what a machine can do and what only a mind can do: arithmetic, chess, Go, language, understanding. Each time a machine crosses one, we draw the line somewhere else.</p>
 <blockquote class="pull"><p>“Once it moves, nobody remembers where it used to be.”</p><cite>Count Grey Matter (from the video essay)</cite></blockquote>
@@ -445,6 +466,7 @@ footer .fullst>p{margin:.8rem 0 0}
 <div class="cl" aria-hidden="true"><svg class="av" viewBox="-70 -70 140 140" focusable="false"></svg></div>
 <p class="who" aria-hidden="true">▶ Listen</p>
 </div>
+<div class="starts" role="group" aria-label="Where to start"><button type="button" class="sans"><b>▶ Hear Claude’s answer</b><small>about 4 minutes</small></button><button type="button" class="sbeg"><b>From the beginning</b><small>10:55</small></button></div>
 <div class="ctl">
 <button type="button" class="play" aria-label="Play">▶</button>
 <input type="range" class="pos" id="reading-position" min="0" max="655" step="1" value="0" aria-label="Choose a moment in the reading">
@@ -615,6 +637,7 @@ footer .fullst>p{margin:.8rem 0 0}
 <dt>November 8, 2026</dt><dd>First published.</dd>
 <dt>November 14, 2026</dt><dd>The page now has three parts. Claude’s assessment of the video essay was added, with four of its sections printed in full and read aloud. A section about a second Count Grey Matter video essay was removed. In the film’s sound, two lines were recorded again so that the name Pfeiffer is said correctly; the picture was not changed.</dd>
 <dt>November 19, 2026</dt><dd>Wording was tightened and polished in a few places for clarity, brevity and accuracy. Part three now plays in one box, and the notes at the end are gathered under Behind the story.</dd>
+<dt>November 21, 2026</dt><dd>Part three now offers two ways in: Claude’s answer first, or the whole reading from the beginning. The drawing in part two, “Where the line was drawn”, now moves.</dd>
 </dl>
 <p class="backtop"><a href="#behind-the-story">↑ Top of Behind the story</a> &nbsp;·&nbsp; <a href="#top">↑ Top of the page</a></p>
 </div></details>
@@ -624,13 +647,14 @@ footer .fullst>p{margin:.8rem 0 0}
 </main>
 <footer>
 <p class="frow"><span>Independent personal project ·</span> <span>Not affiliated with Anthropic ·</span> <span>Privacy, licensing, and reuse</span></p>
-<p class="frow"><span><a href="https://patrickyaeger.com/">Patrick Yaeger</a> ·</span> <span><a href="/">MyFrontierAI</a> ·</span><span class="nl"></span> <span><a href="#page-history">Last updated <time datetime="2026-11-19">November 19, 2026</time></a> ·</span> <button type="button" class="fst" aria-expanded="false" aria-controls="full-statements">Full statements</button></p>
+<p class="frow"><span><a href="https://patrickyaeger.com/">Patrick Yaeger</a> ·</span> <span><a href="/">MyFrontierAI</a> ·</span><span class="nl"></span> <span><a href="#page-history">Last updated <time datetime="2026-11-21">November 21, 2026</time></a> ·</span> <button type="button" class="fst" aria-expanded="false" aria-controls="full-statements">Full statements</button></p>
 <div class="fullst" id="full-statements"><p><strong>Independent personal project.</strong> Frontier is Patrick Yaeger’s independent personal project. It represents his personal work and views and is not a policy, system, endorsement, or position of any employer, client, customer, or affiliated organization. No nonpublic organizational data, systems, confidential information, or work product are incorporated into Frontier.</p><p><strong>Not affiliated with Anthropic.</strong> Claude is a trademark of Anthropic, PBC. This project is not sponsored or endorsed by Anthropic.</p><p><strong>Licensing and reuse.</strong> The film, the script and the images are not licensed for reuse. The quoted line and the embedded video essay belong to Count Grey Matter. The page layout and styling are MIT-licensed. See <a href="https://github.com/pyaeger/myfrontierai/blob/main/LICENSE">LICENSE, section 4</a>.</p><p><strong>Privacy.</strong> Visits are counted with GoatCounter, which sets no cookies and stores no IP addresses.</p></div>
 <script>(function(){var b=document.querySelector("footer .fst"),d=document.getElementById("full-statements");if(!b||!d)return;b.addEventListener("click",function(){var o=d.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false")})})();</script>
 </footer>
 </div>
 <script>(function(){document.querySelectorAll(".yt .ytplay").forEach(function(b){b.addEventListener("click",function(){var d=b.closest(".yt"),f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+d.dataset.id+"?autoplay=1";f.title=d.dataset.title;f.className="ytbox";f.allow="autoplay; encrypted-media; picture-in-picture";f.allowFullscreen=true;f.referrerPolicy="strict-origin-when-cross-origin";var art=d.querySelector(".ytart");d.querySelector(".ytnote").remove();if(art){art.replaceWith(f);b.remove()}else{b.replaceWith(f)}});});})();</script>
 
+<script>(function(){var s=document.querySelector(".ytart.mv"),b=document.querySelector(".lnplay");if(!s)return;function calm(){try{return localStorage.getItem("myfrontierai-motion")==="reduced"}catch(x){return false}}function play(){try{s.getAnimations({subtree:true}).forEach(function(a){a.cancel()})}catch(x){}s.classList.remove("go");void s.getBoundingClientRect();s.classList.add("go")}if(b){b.hidden=false;b.addEventListener("click",play)}if("IntersectionObserver" in window){var io=new IntersectionObserver(function(en){if(en[en.length-1].isIntersecting){io.disconnect();if(!calm())play()}},{threshold:0.6});io.observe(s)}})();</script>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><filter id="avglow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.4"/></filter></defs></svg>
 <script>
 (function(){
@@ -756,6 +780,11 @@ var FLAT=[];secs.forEach(function(sc,i){sc.d.sp.forEach(function(p,k){FLAT.push(
 // LAST: where each voice finishes for good. REV: Claude's first paragraph, under which the view draws back.
 var LAST={},REV=null;
 secs.forEach(function(sc,i){sc.d.sp.forEach(function(p){if(p[0]==='CLAUDE'){if(!REV&&i<secs.length-1)REV=[i,p[1],p[2]]}else LAST[p[0]]=[i,p[2]]})});
+// ANS: where "Hear Claude's answer" starts: the Moderator's last sentence, one sentence before Claude's first word.
+// 218.75 s is inside the pause before that sentence, read from the recording's loudness trace. If the recording
+// ever changes so that this no longer sits just before Claude's first word, the start falls back to that word.
+var ANS=REV?[REV[0],(REV[1]-218.75>0&&REV[1]-218.75<12)?218.75:REV[1]]:[0,0];
+var starts=stage.querySelector('.starts'),sAns=starts.querySelector('.sans'),sBeg=starts.querySelector('.sbeg');
 var st=[].slice.call(stage.querySelectorAll('.seat')).map(function(el,i){return {el:el,svg:el.querySelector('svg'),role:el.getAttribute('data-role'),ph:1.7*i,a:0.3,L:0}});
 var cl={el:stage.querySelector('.cl'),svg:stage.querySelector('.cl svg'),role:'CLAUDE',ph:0.6,a:0.3,L:0,turn:0};
 var S={i:0,mode:'idle',gap0:0,gp:0,timer:0,loaded:-1,want:null,scrub:null,cue:null,until:0,card:''},vw={p:0,k:0},raf=0,last=0,cardTouch=0;
@@ -797,6 +826,10 @@ function sync(){
   var pausable=S.mode==='play'||S.mode==='gap';
   setText(playBtn,pausable?'❚❚':'▶');playBtn.setAttribute('aria-label',pausable?'Pause':'Play');
   stage.classList.toggle('idle',!started());
+  var ended=S.mode==='end',sw=ended&&S.via==='answer',mins='about '+Math.max(1,Math.round((total()-gOf(ANS[0],ANS[1]))/60))+' minutes',all=fmt(total());
+  stage.classList.toggle('ended',ended);
+  setText(sAns.firstChild,sw?'▶ Hear how it got here':'▶ Hear Claude’s answer');setText(sAns.lastChild,sw?'from the beginning · '+all:mins);
+  setText(sBeg.firstChild,sw?'Claude’s answer again':'From the beginning');setText(sBeg.lastChild,sw?mins:all);
   var mx=String(Math.round(total()));if(pos.max!==mx)pos.max=mx;
 }
 // The card: the one paragraph being read, with who reads it. Its words are copied from the full text further down
@@ -999,7 +1032,7 @@ playBtn.addEventListener('click',function(){
   else go(S.i,0);
 });
 // A section's button starts that section from its beginning.
-segBtns.forEach(function(b,j){b.addEventListener('click',function(){go(j,0)})});
+segBtns.forEach(function(b,j){b.addEventListener('click',function(){S.via=null;go(j,0)})});
 // The slider chooses any moment of the whole reading. While it is held nothing changes but the readout.
 pos.addEventListener('input',function(){S.scrub=fromG(+pos.value);kick()});
 pos.addEventListener('change',function(){var q=fromG(+pos.value);S.scrub=null;seek(q.j,q.t)});
@@ -1021,6 +1054,12 @@ if(motionBtn)motionBtn.addEventListener('click',function(){
   calm=!calm;try{localStorage.setItem('myfrontierai-motion',calm?'reduced':'full')}catch(x){}
   showMotion();kick();
 });
+// The two starts. After either, the keyboard's place moves to the play button, because the starts are put away.
+function fromAnswer(){S.via='answer';go(ANS[0],ANS[1])}
+function fromStart(){S.via='start';go(0,0)}
+function began(){try{playBtn.focus({preventScroll:true})}catch(x){}}
+sAns.addEventListener('click',function(){if(S.mode==='end'&&S.via==='answer')fromStart();else fromAnswer();began()});
+sBeg.addEventListener('click',function(){if(S.mode==='end'&&S.via==='answer')fromAnswer();else fromStart();began()});
 window.addEventListener('resize',function(){sync()},{passive:true});
 showMotion();st.forEach(paint);sync();kick();
 })();

@@ -34,6 +34,31 @@ h2{font:800 1.5rem "JetBrains Mono",monospace;color:var(--head);margin:3.2rem 0 
 .status-scroll{overflow-x:auto;margin:1.4rem 0;border:1px solid var(--line);border-radius:10px}.status-scroll:focus-visible{outline:3px solid var(--accent);outline-offset:3px}table{width:100%;min-width:650px;border-collapse:collapse;font-size:.96rem;line-height:1.5}caption{text-align:left;padding:1rem;background:var(--panel);color:var(--dim);font:.72rem/1.5 "JetBrains Mono",monospace}th,td{padding:1rem .85rem;text-align:left;vertical-align:top;border-top:1px solid var(--line);overflow-wrap:break-word}thead th{font:700 .72rem/1.5 "JetBrains Mono",monospace;color:var(--accent-soft);background:var(--panel)}tbody th{width:19%;color:var(--head);font-weight:600}td:nth-child(2){width:16%;font-weight:600;color:var(--accent-soft)}.status-group th{width:auto;padding:.7rem .85rem;background:var(--panel);border-left:4px solid var(--c);font:700 .8rem/1.5 "JetBrains Mono",monospace;letter-spacing:.06em;color:var(--head)}.evidence-note{color:var(--dim);font-size:1rem}
 footer{margin-top:3.6rem;border-top:1px solid var(--line);padding-top:1.4rem;color:var(--dim);font:.74rem/1.55 "JetBrains Mono",monospace}
 @media(max-width:640px){.focus{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.feature{margin:0 0 .6rem}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.feature h3{font:800 1.45rem/1.15 "JetBrains Mono",monospace;color:var(--head);margin:0 0 .5rem;text-wrap:balance}
+.f-kicker{font:700 .68rem "JetBrains Mono",monospace;letter-spacing:.22em;text-transform:uppercase;color:var(--c);margin:0 0 .45rem;max-width:none}
+.f-room{position:relative;background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:14px;overflow:hidden}
+.f-art{display:block;line-height:0;background:#040907}
+.f-art:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.f-art .p-room{display:block;width:100%;height:auto}
+.f-body{padding:1.15rem 1.3rem 1.3rem}
+.f-body p{margin:0 0 1rem}
+.f-body .actions{align-items:center}
+.pmotion{margin:.9rem 0 0;padding:.2rem 0;font:.7rem/1.4 "JetBrains Mono",monospace;color:var(--c2);background:none;border:0;cursor:pointer;text-decoration:underline;text-underline-offset:.18em}
+.pmotion[hidden]{display:none}.pmotion:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.f-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;margin-top:1.1rem}
+.f-card{display:grid;grid-template-columns:minmax(96px,38%) minmax(0,1fr);background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:12px;overflow:hidden}
+.f-media{display:block;align-self:start;background:#040907;line-height:0}
+.f-media img,.f-media video{display:block;width:100%;height:auto}
+.f-card .f-body{display:flex;flex-direction:column;padding:1rem 1rem 1.1rem}
+.f-card h3{font-size:1.02rem;line-height:1.25}
+.f-card p{font-size:.98rem;line-height:1.55}
+.f-card .f-fine{font:.66rem/1.5 "JetBrains Mono",monospace;color:var(--dim)}
+.f-card .actions{margin-top:auto}
+.f-card .btn{padding:.55rem .75rem;font-size:.74rem}
+@media(max-width:760px){.f-pair{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:640px){.f-body{padding:1rem 1rem 1.1rem}.feature h3{font-size:1.25rem}.f-card h3{font-size:1rem}}
 .themebtn{position:fixed;top:14px;right:18px;z-index:10;font:700 .64rem "JetBrains Mono",monospace;letter-spacing:.18em;text-transform:uppercase;background:var(--panel);color:var(--dim);border:1px solid var(--line);border-radius:8px;padding:.5em .9em;cursor:pointer;transition:.15s}html:not(.js) .themebtn{display:none}.themebtn:hover{color:var(--accent);border-color:var(--accent);box-shadow:0 0 14px -4px var(--accent)}.themebtn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 html.light{--bg:#f4f7f5;--panel:#ffffff;--line:#d3e0d8;--accent:#0a7d2e;--accent-soft:#0a7d2e;--accent2:#065a83;--violet:#6b3fb5;--text:#16201a;--dim:#4a5a50;--head:#0a3d22;--c0:#0a7d2e;--c1:#8a5d00;--c2:#065a83;--c4:#6b3fb5;--c5:#a3236a;color-scheme:light}html.light body{background:var(--bg)}html.light .btn{color:#fff}html.light .btn.secondary{color:var(--text)}html.light .badge{background:rgba(10,125,46,.08);border-color:rgba(10,125,46,.35)}html.light dialog.lightbox::backdrop{background:rgba(244,247,245,.96)}
 </style>
@@ -47,10 +72,108 @@ html.light{--bg:#f4f7f5;--panel:#ffffff;--line:#d3e0d8;--accent:#0a7d2e;--accent
 <div class="kicker">A governed personal AI · The latent country</div>
 <h1>MyFrontierAI</h1>
 <p class="lede">An independent project exploring how a local-first personal AI can preserve human agency, surface latent knowledge, and consult external intelligence without surrendering governance.</p>
-<div class="meta"><div><b>Sovereign</b>User-controlled</div><div><b>Foundation</b>Local-first</div><div><b>Governance</b>Constitutional</div><div><b>By</b>Patrick Yaeger</div></div>
 <nav class="nav" aria-label="Primary"><a href="#idea">The idea</a><a href="#capabilities">Capabilities</a><a href="constitution.html">The Constitution</a><a href="divining-rod.html">The first story</a><a href="examination-room.html">The Examination Room</a><a href="#connect">Connect</a></nav>
 </header>
 <main id="main">
+<section class="feature" id="featured" aria-labelledby="featured-heading">
+<h2 id="featured-heading" class="vh">Featured</h2>
+<article class="f-room" style="--c:var(--c1)">
+<a class="f-art" href="examination-room.html" aria-label="The Examination Room. Open the page.">
+<svg class="p-room" viewBox="0 0 720 560" role="img" aria-label="Through a large window: the Moderator, the Questioner, the Believer, the Skeptic and the Experimenter sit round a lamplit table, with one empty chair marked YOU. On the far wall are two windows. Through one, the dark silhouette of a person holding a clipboard. Through the other, Claude looms close to the glass, watching.">
+<defs>
+<linearGradient id="pr-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111c18"/><stop offset=".6" stop-color="#0a1310"/><stop offset="1" stop-color="#050a08"/></linearGradient>
+<linearGradient id="pr-cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffdca0" stop-opacity=".55"/><stop offset=".5" stop-color="#ffd596" stop-opacity=".17"/><stop offset="1" stop-color="#ffd596" stop-opacity="0"/></linearGradient>
+<radialGradient id="pr-felt" cx="50%" cy="34%" r="66%"><stop offset="0" stop-color="#7a5632"/><stop offset=".55" stop-color="#4a3019"/><stop offset="1" stop-color="#21140a"/></radialGradient>
+<radialGradient id="pr-far" cx="50%" cy="50%" r="62%"><stop offset="0" stop-color="#40382a"/><stop offset="1" stop-color="#080706"/></radialGradient>
+<radialGradient id="pr-pool" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffe3b0" stop-opacity=".2"/><stop offset="1" stop-color="#ffe3b0" stop-opacity="0"/></radialGradient>
+<clipPath id="pr-glass"><rect x="20" y="20" width="680" height="520" rx="6"/></clipPath>
+<clipPath id="pr-pglass"><rect x="82" y="54" width="192" height="116" rx="3"/></clipPath>
+<clipPath id="pr-cglass"><rect x="446" y="54" width="192" height="116" rx="3"/></clipPath>
+<radialGradient id="pr-back" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#2b3b34"/><stop offset=".6" stop-color="#101814"/><stop offset="1" stop-color="#020403"/></radialGradient>
+</defs>
+<rect width="720" height="560" rx="14" fill="#1c2522"/>
+<rect x="6" y="6" width="708" height="548" rx="10" fill="none" stroke="#33403b" stroke-width="2"/>
+<g clip-path="url(#pr-glass)">
+<rect x="20" y="20" width="680" height="520" fill="url(#pr-wall)"/>
+<g stroke="#16221d" stroke-width="1.2"><path d="M20,104H700M20,190H700"/><path d="M130,20V276M250,20V276M470,20V276M590,20V276"/></g>
+<rect x="20" y="276" width="680" height="6" fill="#18241f"/>
+<rect x="20" y="398" width="680" height="142" fill="#060b09"/>
+<rect x="72" y="44" width="212" height="136" rx="6" fill="#1d2824"/>
+<rect x="82" y="54" width="192" height="116" rx="3" fill="#020403"/>
+<g clip-path="url(#pr-pglass)">
+<ellipse cx="228" cy="92" rx="70" ry="60" fill="url(#pr-back)"/>
+<ellipse cx="228" cy="82" rx="12" ry="14.5" fill="#010201"/>
+<path d="M222,92V102C222,107 214,109 205,112C195,115 189,123 188,135L186,176H270L268,135C267,123 261,115 251,112C242,109 234,107 234,102V92Z" fill="#010201"/>
+<path d="M238,72A12,14.5 0 0 1 239.5,91" fill="none" stroke="#7d9186" stroke-width="1.3" opacity=".75"/>
+<path d="M234,96V102C234,107 242,109 251,112C261,115 267,123 268,135" fill="none" stroke="#5f7168" stroke-width="1.3" opacity=".65"/>
+<path d="M197,148l24,-8l10,28l-24,8z" fill="#070d0b" stroke="#4a5a53" stroke-width="1.1"/>
+<path d="M205,145l9,-3" stroke="#6f8278" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M204,154l15,-5M207,161l15,-5" stroke="#2c3a34" stroke-width="1"/>
+</g>
+<g font-family="JetBrains Mono,monospace" font-weight="700" font-size="8.6" letter-spacing=".8" fill="#8fa397"><text x="92" y="80">EVERY ANSWER</text><text x="92" y="93">IS EVIDENCE.</text><text x="92" y="112">NO ANSWER</text><text x="92" y="125">IS PROOF.</text></g>
+<path d="M82,54h192v116h-192z" fill="none" stroke="#3a4843" stroke-width="1.5"/>
+<path d="M88,60L134,60L88,146Z" fill="#fff" opacity=".03"/>
+<rect x="436" y="44" width="212" height="136" rx="6" fill="#1d2824"/>
+<rect x="446" y="54" width="192" height="116" rx="3" fill="url(#pr-far)"/>
+<g clip-path="url(#pr-cglass)"><circle cx="542" cy="112" r="74" fill="#cfc6b4" opacity=".1" filter="url(#avglow)"/>
+<svg class="av" data-role="CLAUDE" x="432" y="2" width="220" height="220" viewBox="-70 -70 140 140" overflow="visible"></svg></g>
+<path d="M446,54h192v116h-192z" fill="none" stroke="#3a4843" stroke-width="1.5"/>
+<path d="M452,60L500,60L452,150Z" fill="#fff" opacity=".035"/>
+<path d="M360,20V74" stroke="#1b2421" stroke-width="2.5"/>
+<path d="M334,74h52l16,24h-84z" fill="#2c3632" stroke="#46524d" stroke-width="1"/>
+<ellipse cx="360" cy="100" rx="33" ry="5.5" fill="#ffe3b0" opacity=".92"/>
+<path d="M327,100L393,100L640,420L80,420Z" fill="url(#pr-cone)"/>
+<rect x="148" y="196" width="84" height="170" rx="12" fill="#0d1613" stroke="#22302b" stroke-width="2"/><rect x="313" y="172" width="94" height="196" rx="12" fill="#0d1613" stroke="#22302b" stroke-width="2"/><rect x="488" y="196" width="84" height="170" rx="12" fill="#0d1613" stroke="#22302b" stroke-width="2"/>
+<circle cx="190" cy="250" r="54" fill="#f2f2ee" opacity=".1" filter="url(#avglow)"/><circle cx="360" cy="234" r="62" fill="#5f8fd6" opacity=".1" filter="url(#avglow)"/><circle cx="530" cy="250" r="54" fill="#3fc1b0" opacity=".1" filter="url(#avglow)"/>
+<svg class="av" data-role="BELIEVER" x="140" y="200" width="100" height="100" viewBox="-70 -70 140 140" overflow="visible"></svg><svg class="av" data-role="MODERATOR" x="300" y="174" width="120" height="120" viewBox="-70 -70 140 140" overflow="visible"></svg><svg class="av" data-role="SKEPTIC" x="480" y="200" width="100" height="100" viewBox="-70 -70 140 140" overflow="visible"></svg>
+<ellipse cx="360" cy="398" rx="284" ry="98" fill="#150d07"/>
+<ellipse cx="360" cy="392" rx="278" ry="94" fill="#2e1d10"/>
+<ellipse cx="360" cy="388" rx="270" ry="88" fill="url(#pr-felt)"/>
+<ellipse cx="360" cy="380" rx="180" ry="48" fill="url(#pr-pool)"/>
+<g fill="#e9e2cf" stroke="#2a1a0c" stroke-width=".7"><rect x="338" y="368" width="30" height="20" rx="2" transform="rotate(-7 353 378)"/><rect x="350" y="371" width="30" height="20" rx="2" transform="rotate(5 365 381)"/><path d="M356,377h18M356,383h13" stroke="#8a7f66" stroke-width="1.2" fill="none" transform="rotate(5 365 381)"/></g>
+<g transform="translate(214,340) scale(1,.6) rotate(-14)"><rect x="-21" y="-15" width="42" height="30" rx="3" fill="#0e1512" stroke="#f2f2ee" stroke-width="1.8"/><rect x="-21" y="-15" width="8" height="30" rx="2" fill="#f2f2ee" opacity=".9"/><path d="M-7,-5H13M-7,4H8" stroke="#f2f2ee" stroke-width="1.6" opacity=".55"/></g><g transform="translate(360,326) scale(1,.6) rotate(0)"><rect x="-21" y="-15" width="42" height="30" rx="3" fill="#0e1512" stroke="#5f8fd6" stroke-width="1.8"/><rect x="-21" y="-15" width="8" height="30" rx="2" fill="#5f8fd6" opacity=".9"/><path d="M-7,-5H13M-7,4H8" stroke="#5f8fd6" stroke-width="1.6" opacity=".55"/></g><g transform="translate(506,340) scale(1,.6) rotate(14)"><rect x="-21" y="-15" width="42" height="30" rx="3" fill="#0e1512" stroke="#3fc1b0" stroke-width="1.8"/><rect x="-21" y="-15" width="8" height="30" rx="2" fill="#3fc1b0" opacity=".9"/><path d="M-7,-5H13M-7,4H8" stroke="#3fc1b0" stroke-width="1.6" opacity=".55"/></g><g transform="translate(196,410) scale(1,.6) rotate(-28)"><rect x="-21" y="-15" width="42" height="30" rx="3" fill="#0e1512" stroke="#b996e8" stroke-width="1.8"/><rect x="-21" y="-15" width="8" height="30" rx="2" fill="#b996e8" opacity=".9"/><path d="M-7,-5H13M-7,4H8" stroke="#b996e8" stroke-width="1.6" opacity=".55"/></g><g transform="translate(524,410) scale(1,.6) rotate(28)"><rect x="-21" y="-15" width="42" height="30" rx="3" fill="#0e1512" stroke="#e8679f" stroke-width="1.8"/><rect x="-21" y="-15" width="8" height="30" rx="2" fill="#e8679f" opacity=".9"/><path d="M-7,-5H13M-7,4H8" stroke="#e8679f" stroke-width="1.6" opacity=".55"/></g><g transform="translate(360,438) scale(1,.6) rotate(0)"><rect x="-21" y="-15" width="42" height="30" rx="3" fill="#0e1512" stroke="#e9e2cf" stroke-width="1.8"/><rect x="-21" y="-15" width="8" height="30" rx="2" fill="#e9e2cf" opacity=".9"/><path d="M-7,-5H13M-7,4H8" stroke="#e9e2cf" stroke-width="1.6" opacity=".55"/></g>
+<rect x="46" y="318" width="108" height="240" rx="12" fill="#0d1613" stroke="#22302b" stroke-width="2"/><rect x="566" y="318" width="108" height="240" rx="12" fill="#0d1613" stroke="#22302b" stroke-width="2"/>
+<circle cx="104" cy="360" r="66" fill="#b996e8" opacity=".1" filter="url(#avglow)"/><circle cx="616" cy="360" r="66" fill="#e8679f" opacity=".1" filter="url(#avglow)"/>
+<svg class="av" data-role="QUESTIONER" x="40" y="296" width="128" height="128" viewBox="-70 -70 140 140" overflow="visible"></svg><svg class="av" data-role="EXPERIMENTER" x="552" y="296" width="128" height="128" viewBox="-70 -70 140 140" overflow="visible"></svg>
+<rect x="300" y="452" width="120" height="110" rx="16" fill="#0b1310" stroke="#2f3f39" stroke-width="2.5"/>
+<path d="M322,470h76M322,488h76" stroke="#1c2925" stroke-width="3" stroke-linecap="round"/>
+<rect x="331" y="500" width="58" height="23" rx="3" fill="#e9e2cf"/><text x="360" y="516.5" text-anchor="middle" font-family="JetBrains Mono,monospace" font-weight="800" font-size="14" fill="#17130c" letter-spacing="2.5">YOU</text>
+</g>
+<path d="M70,20L204,20L70,540L20,540L20,210Z" fill="#fff" opacity=".028"/><path d="M566,20L614,20L486,540L456,540Z" fill="#fff" opacity=".016"/>
+<g fill="#48554f"><circle cx="13" cy="13" r="2.6"/><circle cx="707" cy="13" r="2.6"/><circle cx="13" cy="547" r="2.6"/><circle cx="707" cy="547" r="2.6"/><circle cx="360" cy="11" r="2.6"/><circle cx="360" cy="549" r="2.6"/><circle cx="11" cy="280" r="2.6"/><circle cx="709" cy="280" r="2.6"/></g>
+</svg>
+</a>
+<div class="f-body">
+<p class="f-kicker">Newest · An interlude</p>
+<h3>The Examination Room</h3>
+<p>Five voices sit round a lamplit table, with one empty chair marked YOU. A scripted film about what language models understand, the video essay that set it off, and Claude’s own guess at the end.</p>
+<div class="actions"><a class="btn" href="examination-room.html">Enter the room →</a><a class="btn secondary" href="examination-room.html#claudes-assessment">Hear Claude’s answer</a></div>
+<button type="button" class="pmotion" hidden aria-pressed="true">Reduce motion</button>
+</div>
+</article>
+<div class="f-pair">
+<article class="f-card" style="--c:var(--c2)">
+<a class="f-media" href="constitution.html"><img src="img/constitution-themis-400.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Allegorical poster: a seated lawgiver holds up a small lamp before a gilded screen of numbered panels; hooded figures with lanterns kneel below her, and a lone conductor with his back to the viewer raises a baton toward her."></a>
+<div class="f-body">
+<p class="f-kicker">The charter</p>
+<h3>The Frontier Constitution</h3>
+<p>The written charter Frontier answers to, in thirteen articles: purpose, sovereignty, epistemic integrity, human authority.</p>
+<div class="actions"><a class="btn secondary" href="constitution.html">Read it →</a></div>
+</div>
+</article>
+<article class="f-card" style="--c:var(--c4)">
+<div class="f-media"><video controls preload="none" playsinline width="720" height="1280" poster="img/the-lens-poster-360.jpg" aria-label="The Lens: a 14-second video with sound, made for the first story."><source src="video/the-lens-14s-720.mp4" type="video/mp4"><a href="video/the-lens-14s-720.mp4">Download The Lens (MP4)</a></video></div>
+<div class="f-body">
+<p class="f-kicker">The first story</p>
+<h3>A Divining Rod for the Latent</h3>
+<p>It begins with an accusation I am not proud of, and the answer that is the reason this series exists.</p>
+<p class="f-fine">The Lens, 14 seconds, with sound. Nothing loads until you press play.</p>
+<div class="actions"><a class="btn secondary" href="divining-rod.html">Read it →</a></div>
+</div>
+</article>
+</div>
+</section>
+<div class="meta"><div><b>Sovereign</b>User-controlled</div><div><b>Foundation</b>Local-first</div><div><b>Governance</b>Constitutional</div><div><b>By</b>Patrick Yaeger</div></div>
 <section id="idea">
 <h2>The idea</h2>
 <p>MyFrontierAI is a personal AI operating environment: notes, projects, models, policies, and tools connected so that intelligence can work across context without making any single vendor, model, or platform the permanent center.</p>
@@ -121,6 +244,112 @@ html.light{--bg:#f4f7f5;--panel:#ffffff;--line:#d3e0d8;--accent:#0a7d2e;--accent
 </main>
 <footer><p><strong>Independent personal project.</strong> Frontier is Patrick Yaeger’s independent personal project. It represents his personal work and views and is not a policy, system, endorsement, or position of any employer, client, customer, or affiliated organization. No nonpublic organizational data, systems, confidential information, or work product are incorporated into Frontier.</p><p><strong>Licensing and reuse.</strong> The Constitution's text is <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; the site's own code is MIT. Stories, artwork and branding have separate terms and reservations. See <a href="https://github.com/pyaeger/myfrontierai/blob/main/LICENSE">LICENSE for scope and exceptions</a>.</p><p>Visits are counted with GoatCounter, which sets no cookies and stores no IP addresses.</p><p>MYFRONTIERAI · by Patrick Yaeger · 2026</p></footer>
 </div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><filter id="avglow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.4"/></filter></defs></svg>
+<script>
+(function(){
+var COL={MODERATOR:'#5f8fd6',QUESTIONER:'#b996e8',BELIEVER:'#f2f2ee',SKEPTIC:'#3fc1b0',EXPERIMENTER:'#e8679f',CLAUDE:'#cfc6b4'};
+var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function f(x,n){return (+x).toFixed(n==null?1:n)}
+function frac(x){return x-Math.floor(x)}
+function neon(d,c,w,k){return '<path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="'+f(w*3.4)+'" stroke-opacity="'+f(0.07+0.3*k,3)+'" stroke-linecap="round" stroke-linejoin="round" filter="url(#avglow)"/><path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="'+f(w)+'" stroke-linecap="round" stroke-linejoin="round"/>'}
+function shape(role,L,ph,a,turn){
+  var c=COL[role],s='',j,u,r,i;
+  if(role==='MODERATOR'){
+    var hh=22+10*L,lx=6*Math.sin(ph*0.9)*(0.3+0.7*a),pr=7+3*L;
+    s+=neon('M-42,0 Q0,'+f(-hh)+' 42,0',c,2.6,a)+neon('M-42,0 Q0,'+f(hh)+' 42,0',c,2.6,a);
+    s+=neon('M'+f(lx+pr)+',0 A'+f(pr)+','+f(pr)+' 0 1 0 '+f(lx-pr)+',0 A'+f(pr)+','+f(pr)+' 0 1 0 '+f(lx+pr)+',0',c,2.6,a);
+    if(L>0.03)s+='<circle cx="'+f(lx)+'" cy="0" r="'+f(13+8*L)+'" fill="none" stroke="'+c+'" stroke-width="1.4" stroke-opacity="'+f(0.55*L,3)+'"/>';
+    return '<g transform="scale(1.36)">'+s+'</g>';
+  }
+  if(role==='QUESTIONER'||role==='EXPERIMENTER'){
+    var amp=5+19*L,d='';
+    for(i=0;i<=48;i++){u=i/48;var wv=Math.sin(Math.PI*u);
+      var y=role==='QUESTIONER'?Math.sin(u*Math.PI*4.4+ph*5)*amp*wv:(0.62*Math.sin(u*Math.PI*6+ph*6)+0.38*Math.sin(u*Math.PI*14.6-ph*9))*amp*wv;
+      d+=(i?'L':'M')+f(-60+120*u)+','+f(y);}
+    return neon(d,c,3,a);
+  }
+  if(role==='BELIEVER'){
+    var rs=[5,13,22];
+    for(j=0;j<3;j++)s+='<circle r="'+rs[j]+'" fill="none" stroke="'+c+'" stroke-width="2" stroke-opacity="'+f((1-rs[j]/30)*(1-a),3)+'"/>';
+    for(j=0;j<3;j++){u=frac(ph*0.9+j/3);r=4+26*u;s+='<circle r="'+f(r)+'" fill="none" stroke="'+c+'" stroke-width="'+f(2.2-u)+'" stroke-opacity="'+f(a*(1-u)*(0.55+0.45*L),3)+'"/>';}
+    s+='<circle r="'+f(3+1.5*L)+'" fill="'+c+'" opacity="'+f(0.35+0.65*a,3)+'"/>';
+    return '<g transform="scale(1.9)">'+s+'</g>';
+  }
+  if(role==='SKEPTIC'){
+    var rot=45+7*Math.sin(ph*0.7)*a,sq='M-13,-13L13,-13L13,13L-13,13Z';
+    s+='<g transform="rotate('+f(rot)+')">'+neon(sq,c,2.5,a)+'</g>';
+    for(j=0;j<2;j++){u=frac(ph*0.8+j/2);var k=1+0.75*u;s+='<g transform="rotate('+f(rot)+') scale('+f(k,3)+')"><path d="'+sq+'" fill="none" stroke="'+c+'" stroke-width="'+f(1.6/k,2)+'" stroke-opacity="'+f(a*(1-u)*0.8,3)+'"/></g>';}
+    s+='<circle r="'+f(4+2*L)+'" fill="'+c+'"/>';
+    return '<g transform="scale(1.75)">'+s+'</g>';
+  }
+  // CLAUDE: one warm light, with the four voices it wrote in orbit around it.
+  // turn 0 is Claude seen from behind, a dark disc with a warm rim; turn 1 is Claude facing the viewer.
+  var k=turn==null?1:(turn<0?0:turn>1?1:turn),fr=k<=0.72?0:(k-0.72)/0.28;fr=fr*fr*(3-2*fr);
+  var sat=['QUESTIONER','BELIEVER','SKEPTIC','EXPERIMENTER'],orb=[-24,24],back='',front='',g='';
+  for(j=0;j<2;j++)s+='<ellipse rx="54" ry="18" transform="rotate('+orb[j]+')" fill="none" stroke="'+c+'" stroke-width="1.1" stroke-opacity="'+f(0.14+0.2*a,3)+'"/>';
+  for(j=0;j<4;j++){
+    var ang=ph*0.55+j*Math.PI/2,rr=orb[j%2]*Math.PI/180,x0=54*Math.cos(ang),y0=18*Math.sin(ang),z=Math.sin(ang);
+    var x=x0*Math.cos(rr)-y0*Math.sin(rr),yy=x0*Math.sin(rr)+y0*Math.cos(rr);
+    var dot='<circle cx="'+f(x)+'" cy="'+f(yy)+'" r="'+f(8+3*z)+'" fill="'+COL[sat[j]]+'" opacity="'+f(0.16+0.1*z,3)+'" filter="url(#avglow)"/><circle cx="'+f(x)+'" cy="'+f(yy)+'" r="'+f(3.6+1.3*z)+'" fill="'+COL[sat[j]]+'" opacity="'+f(0.72+0.28*z,3)+'"/>';
+    if(z<0)back+=dot;else front+=dot;
+  }
+  s+=back;
+  if(fr<1){
+    g='<circle r="'+f(25+9*L)+'" fill="'+c+'" opacity="'+f(0.2+0.22*a,3)+'" filter="url(#avglow)"/><circle r="15" fill="#040b08" stroke="'+c+'" stroke-width="1.8"/>';
+    if(k>0.01)g+='<path d="M0,-15A15,15 0 0 1 0,15A'+f(15*Math.abs(Math.cos(Math.PI*k)),2)+',15 0 0 '+(k<0.5?0:1)+' 0,-15Z" fill="'+c+'"/>';
+    s+='<g opacity="'+f(1-fr,3)+'">'+g+'</g>';
+  }
+  if(fr>0){
+    g='<circle r="'+f(19+11*L)+'" fill="'+c+'" opacity="'+f(0.16+0.26*a,3)+'" filter="url(#avglow)"/>';
+    for(j=0;j<3;j++){u=frac(ph*0.7+j/3);g+='<circle r="'+f(11+30*u)+'" fill="none" stroke="'+c+'" stroke-width="'+f(1.8-u)+'" stroke-opacity="'+f(a*(1-u)*(0.25+0.55*L),3)+'"/>';}
+    g+='<circle r="'+f(8.5+4.5*L)+'" fill="'+c+'"/><circle cx="-2.6" cy="-2.8" r="'+f(2.6+1.2*L)+'" fill="#fffaf0" opacity=".8"/>';
+    s+='<g opacity="'+f(fr,3)+'">'+g+'</g>';
+  }
+  return s+front;
+}
+function paint(o){var g=shape(o.role,o.L,o.ph,o.a,o.turn);o.svg.innerHTML='<g transform="translate(3,6)" opacity=".2">'+g+'</g>'+g}
+var NAMES={MODERATOR:'The Moderator',QUESTIONER:'The Questioner',BELIEVER:'The Believer',SKEPTIC:'The Skeptic',EXPERIMENTER:'The Experimenter',CLAUDE:'Claude'};
+// The scene at the top of the page: the five voices at their table and Claude at the far window, drawn with the
+// same emblems as the box below. Each stirs a little in turn, as if the table were mid-conversation. The drawing
+// stops while the scene is off the screen, and does not move at all where a device asks for reduced motion.
+(function(){
+  var host=document.querySelector('.f-room');if(!host)return;
+  var seats=[].slice.call(host.querySelectorAll('svg.av[data-role]')).map(function(svg,i){return {svg:svg,role:svg.getAttribute('data-role'),ph:1.3*i,a:0.7,L:0.18,turn:1}});
+  if(!seats.length)return;
+  seats.forEach(paint);
+  // Where a device asks for reduced motion the scene is still, and a small button offers the full motion.
+  // The choice is shared with the box in part three and kept on the visitor's own device.
+  var btn=host.querySelector('.pmotion'),seen=true,running=false,t0=performance.now(),lastT=t0,skip=false;
+  function wantsMotion(){try{return localStorage.getItem('myfrontierai-motion')!=='reduced'}catch(x){return true}}
+  function tick(now){
+    if(!seen||!wantsMotion()){running=false;return}
+    requestAnimationFrame(tick);
+    skip=!skip;if(skip)return;
+    var dt=Math.min(0.25,(now-lastT)/1000);lastT=now;
+    seats.forEach(function(o,i){
+      var w=0.5+0.5*Math.sin((now-t0)/1000*0.55+i*1.9);w=w*w;
+      o.L=0.1+0.42*w;o.a=0.5+0.45*w;o.ph+=dt*(0.45+1.3*o.L);paint(o);
+    });
+  }
+  function start(){if(!running&&seen&&wantsMotion()){running=true;lastT=performance.now();requestAnimationFrame(tick)}}
+  function show(){
+    var m=wantsMotion();
+    host.classList.toggle('fullmotion',m);host.classList.toggle('calm',!m);
+    if(btn){btn.hidden=false;btn.setAttribute('aria-pressed',m?'true':'false');btn.textContent=m?'Reduce motion':'Show full motion'}
+    start();
+  }
+  if(btn)btn.addEventListener('click',function(){
+    var other=document.querySelector('#stage .motion');
+    if(other)other.click();
+    else{try{localStorage.setItem('myfrontierai-motion',wantsMotion()?'reduced':'full')}catch(x){}}
+    show();
+  });
+  document.addEventListener('click',function(ev){if(ev.target&&ev.target.closest&&ev.target.closest('#stage .motion'))setTimeout(show,0)});
+  if('IntersectionObserver' in window)new IntersectionObserver(function(en){seen=en[en.length-1].isIntersecting;start()}).observe(host);
+  show();
+})();
+})();
+</script>
 <script data-goatcounter="https://myfrontierai.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
